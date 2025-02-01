@@ -1,9 +1,9 @@
 package Creational.AbstractFactory.Factories;
 
-import Creational.AbstractFactory.Products.Concrete.PreCompiled.PreCompiledPrivacyPolicy;
-import Creational.AbstractFactory.Products.Concrete.PreCompiled.PreCompiledTaxDeclaration;
-import Creational.AbstractFactory.Products.PrivacyPolicy;
-import Creational.AbstractFactory.Products.TaxDeclaration;
+import Creational.AbstractFactory.Documents.Concrete.PreCompiled.PreCompiledPrivacyPolicy;
+import Creational.AbstractFactory.Documents.Concrete.PreCompiled.PreCompiledTaxDeclaration;
+import Creational.AbstractFactory.Documents.PrivacyPolicy;
+import Creational.AbstractFactory.Documents.TaxDeclaration;
 
 public class PreCompiledDocumentFactory implements DocumentFactory {
     private final TaxDeclaration taxDeclaration;

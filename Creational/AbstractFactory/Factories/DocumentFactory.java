@@ -1,7 +1,7 @@
 package Creational.AbstractFactory.Factories;
 
-import Creational.AbstractFactory.Products.PrivacyPolicy;
-import Creational.AbstractFactory.Products.TaxDeclaration;
+import Creational.AbstractFactory.Documents.PrivacyPolicy;
+import Creational.AbstractFactory.Documents.TaxDeclaration;
 
 public interface DocumentFactory {
     TaxDeclaration getTaxDeclaration();

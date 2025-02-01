@@ -1,6 +1,6 @@
-package Creational.AbstractFactory.Products.Concrete.Static;
+package Creational.AbstractFactory.Documents.Concrete.Static;
 
-import Creational.AbstractFactory.Products.TaxDeclaration;
+import Creational.AbstractFactory.Documents.TaxDeclaration;
 
 public class StaticTaxDeclaration extends TaxDeclaration {
     public StaticTaxDeclaration(Float[] incomes, Float[] outcomes) {

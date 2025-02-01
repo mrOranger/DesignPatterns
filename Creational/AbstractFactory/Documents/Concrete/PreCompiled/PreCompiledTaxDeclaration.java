@@ -1,6 +1,6 @@
-package Creational.AbstractFactory.Products.Concrete.PreCompiled;
+package Creational.AbstractFactory.Documents.Concrete.PreCompiled;
 
-import Creational.AbstractFactory.Products.TaxDeclaration;
+import Creational.AbstractFactory.Documents.TaxDeclaration;
 
 public class PreCompiledTaxDeclaration extends TaxDeclaration {
     public PreCompiledTaxDeclaration(Float[] incomes, Float[] outcomes) {

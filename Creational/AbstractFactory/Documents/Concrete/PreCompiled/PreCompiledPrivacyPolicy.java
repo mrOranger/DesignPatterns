@@ -1,6 +1,6 @@
-package Creational.AbstractFactory.Products.Concrete.PreCompiled;
+package Creational.AbstractFactory.Documents.Concrete.PreCompiled;
 
-import Creational.AbstractFactory.Products.PrivacyPolicy;
+import Creational.AbstractFactory.Documents.PrivacyPolicy;
 
 public class PreCompiledPrivacyPolicy extends PrivacyPolicy {
     public PreCompiledPrivacyPolicy(String firstName, String lastName) {

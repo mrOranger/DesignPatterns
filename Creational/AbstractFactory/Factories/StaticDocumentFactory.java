@@ -1,9 +1,9 @@
 package Creational.AbstractFactory.Factories;
 
-import Creational.AbstractFactory.Products.Concrete.Static.StaticPrivacyPolicy;
-import Creational.AbstractFactory.Products.Concrete.Static.StaticTaxDeclaration;
-import Creational.AbstractFactory.Products.PrivacyPolicy;
-import Creational.AbstractFactory.Products.TaxDeclaration;
+import Creational.AbstractFactory.Documents.Concrete.Static.StaticPrivacyPolicy;
+import Creational.AbstractFactory.Documents.Concrete.Static.StaticTaxDeclaration;
+import Creational.AbstractFactory.Documents.PrivacyPolicy;
+import Creational.AbstractFactory.Documents.TaxDeclaration;
 
 public class StaticDocumentFactory implements DocumentFactory {
     private final TaxDeclaration taxDeclaration;

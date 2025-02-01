@@ -1,4 +1,4 @@
-package Creational.AbstractFactory.Products;
+package Creational.AbstractFactory.Documents;
 
 public abstract class PrivacyPolicy {
     protected final String firstName;

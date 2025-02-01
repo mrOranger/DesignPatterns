@@ -1,6 +1,6 @@
-package Creational.AbstractFactory.Products.Concrete.Static;
+package Creational.AbstractFactory.Documents.Concrete.Static;
 
-import Creational.AbstractFactory.Products.PrivacyPolicy;
+import Creational.AbstractFactory.Documents.PrivacyPolicy;
 
 
 public class StaticPrivacyPolicy extends PrivacyPolicy {
