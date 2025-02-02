@@ -47,7 +47,7 @@ Client.
 
 Per chiarire meglio le idee, vediamo come viene rappresentato questo Design Pattern in un Diagramma UML:
 
-<div style="display: flex; justify-content: center; width: 100vw; padding: 1em">
+<div style="display: flex; justify-content: center; width: 100vw; padding: 1em 2em">
     <img src="../../Assets/Images/Creazionali/Builder.png" alt="Builder Design Pattern" style="width: 70%"/>
 </div>
 

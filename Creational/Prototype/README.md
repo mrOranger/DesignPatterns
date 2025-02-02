@@ -61,7 +61,7 @@ di un'interfaccia condivisa denominata __Prototype__ che definisce un metodo di 
 vogliono poter essere clonate e che verranno denominate __Concrete Prototype__. La struttura del Design Pattern è 
 descritta nella figura sottostante:
 
-<div style="display: flex; justify-content: center; width: 100vw; padding: 1em">
+<div style="display: flex; justify-content: center; width: 100vw; padding: 1em 2em">
     <img src="../../Assets/Images/Creazionali/Prototype.png" alt="Prototype Design Pattern" style="width: 70%"/>
 </div>
 

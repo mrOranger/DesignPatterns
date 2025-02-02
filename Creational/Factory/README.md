@@ -37,7 +37,7 @@ quello che viene chiamato __Factory Method__, ossia il metodo astratto che si oc
 Infine, ciascuna classe Concrete Creator, dovrà contenere una relazione al tipo di oggetto finale che dovrà essere 
 creato. 
 
-<div style="display: flex; justify-content: center; width: 100vw; padding: 1em">
+<div style="display: flex; justify-content: center; width: 100vw; padding: 1em 2em">
     <img src="../../Assets/Images/Creazionali/Factory.png" alt="Factory Design Pattern" style="width: 70%"/>
 </div>
 

@@ -24,7 +24,9 @@ problemi di dipendenza nel codice.
 
 In termini grafici, l'organizzazione del nostro codice seguirà questo diagramma:
 
-<img alt="Abstract Factory" src="../../Assets/Images/Creazionali/AbstractFactory.png" />
+<div style="display: flex; justify-content: center; width: 100vw; padding: 1em 2em">
+    <img src="../../Assets/Images/Creazionali/AbstractFactory.png" alt="Builder Design Pattern" style="width: 70%"/>
+</div>
 
 ## Partecipanti
 All'interno del diagramma, possiamo identificare i seguenti attori:

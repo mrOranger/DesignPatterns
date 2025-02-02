@@ -39,8 +39,4 @@ una modifica.
 
 Sia chiaro che quindi i Design Pattern Creazionali <u>non aiutano lo sviluppatore a scrivere codice più efficiente 
 oppure a ridurne complessivamente la struttura</u>, ma aiutano invece a creare una soluzione che sia riusabile, e quindi meno 
-affetta a cambiamenti futuri che potrebbero stravolgerne il funzionamento. 
-
-Nell'implementazione dei vari Design Patterns vedremo che questi implicheranno modifiche alla classe 
-`CorporateFactory` e che la combinazione delle varie modifiche (per necessità dettate da diversi scenari) 
-defineranno il particolare tipo di Design Pattern da implementare.
+affetta a cambiamenti futuri che potrebbero stravolgerne il funzionamento.
