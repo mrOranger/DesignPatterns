@@ -58,7 +58,7 @@ e che aiutano nella comprensione del funzionamento alla base di questi:
 Prendiamo in considerazione questo primo diagramma UML:
 
 <p style="display: flex; justify-content: center">
-    <img src="./assets/Images/Introduzione-1.png" alt="Introduzione 1" style="width:50%">
+    <img src="./Assets/Images/Introduzione-1.png" alt="Introduzione 1" style="width:50%">
 </p>
 
 In questo specifico esempio, la classe __Pilota__ si riferisce direttamente ad un oggetto appartenente ad una delle
@@ -77,7 +77,7 @@ work della classe Person, impatterebbe direttamente sulla classe Employee. In te
 scenario usando il seguente schema:
 
 <p style="display: flex; justify-content: center">
-    <img src="./assets/Images/Introduzione-2.png" alt="Introduzione 2" style="width:50%">
+    <img src="./Assets/Images/Introduzione-2.png" alt="Introduzione 2" style="width:50%">
 </p>
 
 In gergo, si dice che è stata realizzata una relazione del tipo __is-a__. Se, invece, avessimo usato la
