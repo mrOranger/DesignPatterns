@@ -15,7 +15,7 @@ che a ciascun utente viene assegnato un account, un modo per rappresentare quest
 applicazione potrebbe essere quella mostrata nel diagramma sottostante:
 
 <p style="display: flex; justify-content: center">
-    <img src="../../Assets/Images/Strutturali/Bridge1.png" alt="Bridge Design Pattern Example" style="width:70%">
+    <img src="../../Assets/Images/Strutturali/Bridge-1.png" alt="Bridge Design Pattern Example" style="width:70%">
 </p>
 
 All'interno di questo diagramma, l'Astrazione è rappresentata da tutte le classi astratte che forniscono una 
@@ -32,7 +32,7 @@ che esista un collegamento tra queste due</u>, onde evitare che si perda la rela
 della gerarchia. L'implementazione del Design Pattern, quindi, si basa sul seguente schema:
 
 <p style="display: flex; justify-content: center">
-    <img src="../../Assets/Images/Strutturali/Bridge2.png" alt="Bridge Design Pattern" style="width:70%">
+    <img src="../../Assets/Images/Strutturali/Bridge-2.png" alt="Bridge Design Pattern" style="width:70%">
 </p>
 
 Notiamo come abbiamo effettivamente separato l'astrazione le sue raffinazioni (che rappresentano un __Account__ e le 
