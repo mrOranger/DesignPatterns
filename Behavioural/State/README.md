@@ -82,6 +82,7 @@ quale viene calcolato lo stato successivo e definita la transizione, dalla logic
 all'elaborazione di un ordine. Così facendo, siamo in grado di rispettare il Single Responsibiliy Principle.
 
 Sulla base di queste considerazioni, potremmo riorganizzare il codice in questa maniera:
+
 <div style="display: flex; justify-content: center; width: 100vw; padding: 1em 2em">
     <img src="../../Assets/Images/Comportamentali/State.png" alt="State Design Pattern" style="width: 70%"/>
 </div>
