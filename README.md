@@ -72,9 +72,7 @@ e che aiutano nella comprensione del funzionamento alla base di questi:
 
 Prendiamo in considerazione questo primo diagramma UML:
 
-<div style="display: flex; width: 100%; justify-content: center; align-items: center">
-  <img src="./Assets/Images/Introduzione-1.png" alt="Introduzione 1" style="display: block; margin: 0 auto;">
-</div>
+<img src="./Assets/Images/Introduzione-1.png" alt="Introduzione 1" style="width: 100%">
 
 Genericamente potremmo pensare che la classe `Manager`, possa essere codificata in questo modo, usando Java:
 
