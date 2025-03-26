@@ -6,7 +6,7 @@ un __Project Manager__ o un __Dirigente__ (lascio a voi una lista più esaustiva
 assegnato un particolare tipo di contratto, quale potrebbe essere un Full-Time o un Part-Time. Avendo in mente questa 
 configurazione, proviamo a rappresentarla attraverso un Diagramma UML:
 
-<img src="../Assets/Images/Creazionali/Introduzione.png" alt="Pattern Creazionali" style="width:50%; display: block; margin: 0 auto;"/>
+<img src="../Assets/Images/Creazionali/Introduzione.png" alt="Pattern Creazionali" style="width:100%"/>
 
 Immaginando di voler quindi implementare un'Azienda con diversi Impiegati, potremmo supporre che esista una 
 classe denominata `CorporateFactory` che implementa al suo interno la logica per la creazione di un'azienda, 
