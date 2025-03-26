@@ -1,6 +1,6 @@
 # Design Patterns Strutturali
 
-In precedenza abbiamo visto come i Design Pattern Creazionali ci permettono di ordinare il processo di creazione di 
+In precedenza, abbiamo visto come i Design Pattern Creazionali ci permettono di ordinare il processo di creazione di 
 un'oggetto modificandone l'organizzazione delle classi e la loro composizione. I __Design Pattern Strutturali__, 
 d'altro canto, descrivono come comporre classi ed oggetti, in modo tale da creare strutture più complesse che 
 possono risolvere dei problemi strutturali intrinsechi della nostra applicazione.

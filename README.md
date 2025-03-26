@@ -61,7 +61,7 @@ agglomerato di classi ed oggetti, ma tuttavia, come una base di conoscenza da mo
 orientati spesso sia all'ottimizzazione, ma anche all'aumento della leggibilità e compresione dello stesso, che 
 faciliterebbe di gran lunga il lavoro di altri nostri colleghi.
 
-## 📖 Due Concetti Teorici Fondamentali
+## Due Concetti Teorici Fondamentali
 
 Capisco che il catalogo dei Design Pattern sia di una notevole dimensione, e che di conseguenza ricordare tutti i
 Pattern potrebbe essere un lavoro tedioso. Tuttavia, i Design Pattern si basano su due concetti teorici comuni,
@@ -121,7 +121,7 @@ composizione, e quindi trasformando la relazione da is-a a __has-a__, saremo sta
 classi, permettendo alla classe Employee di non accedere all'implementazione di Person, e riducendo l'impatto delle
 modifiche sulla classe padre. 
 
-### ⁉️ N.B.
+### N.B.
 All'interno di questa repository, come si sarà capito leggendo l'introduzione, si farà molto uso dei diagrammi UML, 
 in quanto sono un elemento fondamentale oltre al codice, per capire l'organizzazione e la logica dietro i Design 
 Patterns. Inoltre, oltre che i diagrammi UML, ho scelto di usare il linguaggio Java, senza però alcun motivo 
