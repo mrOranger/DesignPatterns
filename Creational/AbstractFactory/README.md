@@ -1,9 +1,13 @@
 # Abstract Factory
+Lo scopo di questo Design Pattern è quello di fornire una strategia di creazione di oggetti appartenenti a diverse 
+gerarchie, astraendo il processo di istanziazione e delegandolo ad una classe factory.
+
+## Scenario d'uso
 Consideriamo il seguente scenario: un'applicazione web è in grado di generare una serie di Documenti Precompilati 
 che possono essere modificati successivamente dal Cliente, oppure generare direttamente il Documento Statico senza 
 che sia possibile modificarlo in futuro. Esistono diverse tipologie di Documenti che possono essere precompilati o 
-generati direttamente in maniera static, però ci limiteremo a considerarne due: il primo sarà il Trattamento dei 
-Dati Personali; invece, il secondo sarà la propria Dichiarazione dei Redditi.
+generati direttamente in maniera statica, però ci limiteremo a considerarne due: il primo tipo di documenti sarà il 
+Trattamento dei Dati Personali; invece, il secondo sarà la propria Dichiarazione dei Redditi.
 
 Considerando solamente questo semplice scenario, se avessimo implementato un algoritmo che gestisce al suo interno 
 direttamente istanze di Trattamenti dei Dati Personali o Dichiarazioni dei Redditi generate dinamicamente, sarebbe 
@@ -13,20 +17,18 @@ Tuttavia, la chiave per organizzare meglio la rappresentazione delle nostre clas
 categorizzazione con cui i vari documenti sono stati descritti. Considerando quindi che ciascun documento può essere 
 di due tipologie, rispettivamente: __Trattamenti dei Dati Personali__ e __Dichiarazione dei Redditi__, possiamo 
 costruire attorno a questa categorizzazione, una classe che restituisca un'istanza specifica di questi documenti, 
-che sia stata precompilata o statica. Questo particolare tipo di classe che restituisce un'istanza, evitando al 
-Client di istanziare esplicitamente una classe, viene denominato __Factory Class__.
+che sia stata precompilata o statica. Questa particolare tipo di classe che restituisce un'istanza (evitando al 
+Client di istanziare esplicitamente una classe) viene denominata __Factory Class__.
 
 E'facile intuire che nel nostro esempio, avremo rispettivamente due __Factory Class__, rispettivamente: la prima per 
-generare documenti precompilati, mentre la prima per generare gli stessi documenti ma statici. Dichiarando queste 
+generare documenti precompilati; mentre la prima per generare gli stessi documenti ma statici. Dichiarando queste 
 classi come implementazione di una generica interfaccia astratta denominata __Abstract Factory__, in futuro potremo 
 usare il Polimorfismo per usare una particolare istanza di una __Factory Class__ al posto di un'altra, evitando 
 problemi di dipendenza nel codice.
 
 In termini grafici, l'organizzazione del nostro codice seguirà questo diagramma:
 
-<div style="display: flex; justify-content: center; width: 100vw; padding: 1em 2em">
-    <img src="../../Assets/Images/Creazionali/AbstractFactory.png" alt="Builder Design Pattern" style="width: 70%"/>
-</div>
+<img src="../../Assets/Images/Creazionali/AbstractFactory.png" alt="Builder Design Pattern" style="width: 100%"/>
 
 ## Partecipanti
 All'interno del diagramma, possiamo identificare i seguenti attori:
