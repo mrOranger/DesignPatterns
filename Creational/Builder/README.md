@@ -1,15 +1,18 @@
 # Builder
+Il Design Pattern Builder astre il processo di costruzione di un oggetto, permettendo di comporre in maniera 
+dinamica ed incrementale il suo stato interno.
 
-Concentriamoci su questo scenario, tratto da un'applicazione gestionale per un'azienda di trasporto. Abbiamo creato 
-un'applicazione che permette di gestire diversi Ordini contenenti un numero arbitrario di Prodotti, e che deve 
-essere consegnato entro una data prefissata al Cliente. Sulla base del piano di abbonamento del Cliente, vengono 
-creati diversi tipi di Ordini. Ad esempio: un Cliente potrebbe aver sottoscritto un abbonamento Standard senza 
-pagare alcuna tassa aggiuntiva, e che permette la consegna dell'Ordine solamente presso un centro autorizzato, entro 
-una data massima di tre settimane. Analogamente, un Cliente potrebbe aver sottoscritto un abbonamento Premium che 
-gli permette di ricevere direttamente l'Ordine a casa, senza pagare spese di spedizione e ricevendolo entro massimo 
-1 settimana.
+# Scenario d'uso
+Concentriamoci su questo scenario, tratto da un'applicazione gestionale per un'azienda di trasporti. Abbiamo creato 
+un'applicazione che permette di gestire diversi ordini contenenti un numero arbitrario di prodotti, e che devono 
+essere consegnati entro una data prefissata al cliente. Sulla base del piano di abbonamento del cliente, vengono 
+creati diversi tipi di ordini. Ad esempio: un cliente potrebbe aver sottoscritto un abbonamento standard senza 
+pagare alcuna tassa aggiuntiva, e che permette la consegna dell'ordine solamente presso un centro autorizzato, entro 
+una data massima di tre settimane. Analogamente, un cliente potrebbe aver sottoscritto un abbonamento premium che 
+gli permetta di ricevere direttamente l'ordine in un luogo specifico, senza pagare spese di spedizione e ricevendolo 
+entro massimo 1 settimana.
 
-Come possiamo rappresentare brevemente il processo di creazione di un Ordine all'interno della nostra applicazione? 
+Come possiamo rappresentare brevemente il processo di creazione di un ordine all'interno della nostra applicazione? 
 Possiamo immaginare uno scenario di questo tipo, in cui è definito un metodo `createOrder` che riceve una serie di 
 parametri e che restituisce l'Ordine appena creato:
 
@@ -24,32 +27,30 @@ public class OrderManager {
 }
 ```
 
-il codice di esempio è per il momento molto semplificato per non perdere tempo. Ovviamente, il numero di parametri 
-nel nostro scenario concreto è molto più complesso, il che causerebbe un collo di bottiglia nella creazione 
-dell'Ordine, in quanto la lista dei parametri che viene passata al costrutture sarebbe troppo lunga, ed inoltre, 
-sarebbe necessario eseguire l'overload del costruttore diverse volte, sulla base delle diverse combinazioni di 
-parametri che vogliamo usare per creare l'Ordine. 
+Per non perdere tempo, il nostro esempio è molto semplificato. Ovviamente, il numero di parametri in uno 
+scenario concreto è molto più complesso, e causerebbe un aumento della complessità nella gestione del codice, in 
+quanto la lista dei parametri che viene passata al costrutture sarebbe troppo lunga. Infine, sarebbe necessario 
+eseguire l'overload del costruttore diverse volte, sulla base delle diverse combinazioni di parametri che vogliamo 
+usare per creare l'ordine. 
 
 Oltre a quanto descritto precedentemente, un altro problema è rappresentato dalla violazione del principio 
-dell'Incapsulamento, in quanto siamo esponendo al Client dei dettagli su come dovrà essere creato l'Ordine, e nel 
+dell'incapsulamento, in quanto siamo esponendo al client dei dettagli su come dovrà essere creato l'Ordine, e nel 
 caso in cui si aggiungano in futuro degli altri piani di abbonamento, sarà necessario modificare il codice, 
 aggiungendo altri rami condizionali a quelli già presenti.
 
 Avendo bene in mente la nostra problematica, il Design Pattern __Builder__, risolve quando descritto prima, astraendo 
-il processo di creazione di un'Ordine e definendone le varie logiche di creazione all'interno di diverse 
+il processo di creazione di un ordine e definendone le varie logiche di creazione all'interno di diverse 
 classi denominate __Concrete Builder__. Affinchè queste classi siano tra loro interscambiabili (e quindi sia 
-possibile utilizzare una logica di creazione diversa senza dover modificare il codice del Client) sfruttando il 
+possibile utilizzare una logica di creazione diversa senza dover modificare il codice del Client), sfruttando il 
 Polimorfismo, verrà creata una classe astratta o un'interfaccia che prende il nome di __Builder__ e che definisce lo 
-scheletro del processo di creazione di un Ordine a cui tutte le classi Concrete Builder dovranno attenersi. Un ulteriore 
-passo aggiuntivo, che astrae il processo di creazione, è rappresentato dalla classe __Director__, ossia la classe che si 
-occupa di restituire i vari Concrete Builder sulla base della richiesta del Client, sulla base della richiesta del 
-Client.
+scheletro del processo di creazione di un ordine a cui tutte le classi Concrete Builder dovranno attenersi. Un 
+ulteriore passo aggiuntivo, che astrae il processo di creazione, è rappresentato dalla classe __Director__, ossia la
+classe che si occupa di restituire i vari Concrete Builder sulla base della richiesta del Client, sulla base della 
+richiesta del Client.
 
 Per chiarire meglio le idee, vediamo come viene rappresentato questo Design Pattern in un Diagramma UML:
 
-<div style="display: flex; justify-content: center; width: 100vw; padding: 1em 2em">
-    <img src="../../Assets/Images/Creazionali/Builder.png" alt="Builder Design Pattern" style="width: 70%"/>
-</div>
+<img src="../../Assets/Images/Creazionali/Builder.png" alt="Builder Design Pattern" style="width: 100%"/>
 
 ## Partecipanti
 Come possiamo vedere, nel nostro diagramma agiscono rispettivamente le seguenti entità:
